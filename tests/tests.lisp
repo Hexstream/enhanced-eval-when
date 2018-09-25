@@ -5,9 +5,8 @@
 (cl:in-package #:enhanced-eval-when_tests)
 
 (defmacro test-passthrough (situations)
-  `(is equal
-       (macroexpand-1 '(eval-when ,situations do-it))
-       '(cl:eval-when ,situations do-it)))
+  `(is equal '(cl:eval-when ,situations do-it)
+       (macroexpand-1 '(eval-when ,situations do-it))))
 
 (define-test "enhanced-eval-when"
   (is equal
