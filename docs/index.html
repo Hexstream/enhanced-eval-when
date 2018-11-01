@@ -85,7 +85,7 @@
 
       <section id="introduction">
 
-        <p><dfn><cite class="common-lisp library">enhanced-eval-when</cite></dfn> provides an enhanced <code>eval-when</code> macro that supports<br /><code class="common-lisp">(<code class="common-lisp library macro operator">eval-when</code> t ...)</code> as a shorthand for<br /><code>(<code class="common-lisp library macro operator">eval-when</code> (<code class="common-lisp standard local marker">:compile-toplevel</code> <code class="common-lisp standard local marker">:load-toplevel</code> <code class="common-lisp standard local marker">:execute</code>) ...)</code>, addressing concerns about verbosity. An <code class="common-lisp library macro operator">enhanced-eval-when</code> alias is also supported, as well as an <code class="common-lisp library macro operator">eval-always</code> macro and package nickname, for good measure.</p>
+        <p><dfn><cite class="relevant">enhanced-eval-when</cite></dfn> provides an enhanced <code>eval-when</code> macro that supports<br /><code class="common-lisp">(<code class="relevant">eval-when</code> t ...)</code> as a shorthand for<br /><code>(<code class="relevant">eval-when</code> (<code class="common-lisp standard local marker">:compile-toplevel</code> <code class="common-lisp standard local marker">:load-toplevel</code> <code class="common-lisp standard local marker">:execute</code>) ...)</code>, addressing concerns about verbosity. An <code class="relevant">enhanced-eval-when</code> alias is also supported, as well as an <code class="relevant">eval-always</code> macro and package nickname, for good measure.</p>
 
         <p>As <code>eval-when</code> with all situations specified is used an overwhelming majority of the time by most users, these shorthands can really come handy!</p>
 
@@ -93,7 +93,7 @@
 
       <section id="documentation">
 
-        <p>The recommended way to use <cite class="common-lisp library">enhanced-eval-when</cite> is to put <code>(:shadowing-import-from #:enhanced-eval-when #:eval-when)</code> in one's <code>defpackage</code>.</p>
+        <p>The recommended way to use <cite class="relevant">enhanced-eval-when</cite> is to put <code>(:shadowing-import-from #:enhanced-eval-when #:eval-when)</code> in one's <code>defpackage</code>.</p>
 
         <p>For those who would object to such shadowing, two alternatives are:</p>
 
@@ -105,15 +105,15 @@
 
         <div class="scroll">
           <pre class="example"><code class="common-lisp">(:import-from #:eval-always #:eval-always)
-<span class="comment">;;The name used for <cite class="common-lisp library"><a href="http://common-lisp.net/project/asdf/">ASDF</a></cite> is still enhanced-eval-when.</span></code></pre>
+<span class="comment">;;The name used for <cite class="relevant"><a href="http://common-lisp.net/project/asdf/">ASDF</a></cite> is still enhanced-eval-when.</span></code></pre>
         </div>
 
         <p>As always, it's also possible to fully qualify symbols instead, with:</p>
 
         <ul>
-          <li><code class="common-lisp library macro operator">enhanced-eval-when:eval-when</code></li>
-          <li><code class="common-lisp library macro operator">e-eval-when:eval-when</code></li>
-          <li><code class="common-lisp library macro operator">eval-always:eval-always</code></li>
+          <li><code class="relevant">enhanced-eval-when:eval-when</code></li>
+          <li><code class="relevant">e-eval-when:eval-when</code></li>
+          <li><code class="relevant">eval-always:eval-always</code></li>
         </ul>
 
         <p><b>Don't <code class="common-lisp">(:use)</code>!</b></p>
