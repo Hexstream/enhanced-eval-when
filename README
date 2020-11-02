@@ -1,4 +1,4 @@
-Project's home: https://www.hexstreamsoft.com/projects/enhanced-eval-when/
+Project's home: https://www.hexstreamsoft.com/libraries/enhanced-eval-when/
 
 
 enhanced-eval-when provides an enhanced EVAL-WHEN macro that supports
@@ -9,26 +9,7 @@ macro and package nickname, for good measure.
 
 As EVAL-WHEN with all situations specified is used an overwhelming
 majority of the time by most users, these shorthands can really come
-handy.
-
-
-The recommended way to use enhanced-eval-when is to put
-(:shadowing-import-from #:enhanced-eval-when #:eval-when) in one's
-DEFPACKAGE.
-
-For those who would object to such shadowing, two alternatives are:
-
-(:import-from #:enhanced-eval-when #:enhanced-eval-when)
-;; and
-(:import-from #:eval-always #:eval-always)
-;; The name used for ASDF is still enhanced-eval-when.
-
-As always, it's also possible to fully qualify symbols instead, with:
-enhanced-eval-when:eval-when
-e-eval-when:eval-when
-eval-always:eval-always
-
-Don't (:use)!
+handy!
 
 
 This library is in the Public Domain.
