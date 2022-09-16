@@ -87,9 +87,27 @@
 
       <section id="introduction">
 
-        <p><dfn><cite class="relevant">enhanced-eval-when</cite></dfn> provides an enhanced <code>eval-when</code> macro that supports<br /><code class="common-lisp">(<code class="relevant">eval-when</code> t ...)</code> as a shorthand for<br /><code>(<code class="relevant">eval-when</code> (<code class="common-lisp standard local marker">:compile-toplevel</code> <code class="common-lisp standard local marker">:load-toplevel</code> <code class="common-lisp standard local marker">:execute</code>) ...)</code>, addressing concerns about verbosity. An <code class="relevant">enhanced-eval-when</code> alias is also supported, as well as an <code class="relevant">eval-always</code> macro and package nickname, for good measure.</p>
+        <p>
+          <dfn><cite class="relevant">enhanced-eval-when</cite></dfn> provides an enhanced <code>eval-when</code> macro that supports
+          <br />
+          <code class="common-lisp">(<code class="relevant">eval-when</code> t ...)</code> as a shorthand for
+          <br />
+          <code>(<code class="relevant">eval-when</code> (<code class="common-lisp standard local marker">:compile-toplevel</code> <code class="common-lisp standard local marker">:load-toplevel</code> <code class="common-lisp standard local marker">:execute</code>) ...)</code>,
+          <br />
+          addressing concerns about verbosity.
+        </p>
 
-        <p>As <code>eval-when</code> with all situations specified is used an overwhelming majority of the time by most users, these shorthands can really come handy!</p>
+        <p>
+          An <code class="relevant">enhanced-eval-when</code> alias is also supported,
+          <br />
+          as well as an <code class="relevant">eval-always</code> macro and package nickname, for good measure.
+        </p>
+
+        <p>
+          As <code>eval-when</code> with all situations specified is used an overwhelming majority
+          <br />
+          of the time by most users, these shorthands can really come handy!
+        </p>
 
       </section>
 
