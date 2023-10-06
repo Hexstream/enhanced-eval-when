@@ -3,13 +3,10 @@ Project's home: https://www.hexstreamsoft.com/libraries/enhanced-eval-when/
 
 enhanced-eval-when provides an enhanced EVAL-WHEN macro that supports
 (eval-when t ...) as a shorthand for (eval-when (:compile-toplevel
-:load-toplevel :execute) ...), addressing concerns about verbosity. An
-ENHANCED-EVAL-WHEN alias is also supported, as well as an EVAL-ALWAYS
-macro and package nickname, for good measure.
+:load-toplevel :execute) ...), addressing concerns about verbosity.
 
-As EVAL-WHEN with all situations specified is used an overwhelming
-majority of the time by most users, these shorthands can really come
-handy!
+As EVAL-WHEN with all situations specified is used an overwhelming majority
+of the time by most users, this shorthand can really come handy!
 
 
 This library is in the Public Domain.

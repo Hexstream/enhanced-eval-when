@@ -1,15 +1,14 @@
 (asdf:defsystem #:enhanced-eval-when
 
-  :author "Jean-Philippe Paradis <hexstream@gmail.com>"
+  :author "Jean-Philippe Paradis <hexstream@hexstreamsoft.com>"
 
-  ;; See the UNLICENSE file for details.
-  :license "Public Domain"
+  :license "Unlicense"
 
-  :description "enhanced-eval-when provides an enhanced EVAL-WHEN macro that supports (eval-when t ...) as a shorthand for (eval-when (:compile-toplevel :load-toplevel :execute) ...), addressing concerns about verbosity. An ENHANCED-EVAL-WHEN alias is also supported, as well as an EVAL-ALWAYS macro and package nickname, for good measure."
+  :description "Provides an enhanced EVAL-WHEN macro that supports (eval-when t ...) as a shorthand for (eval-when (:compile-toplevel :load-toplevel :execute) ...), addressing concerns about verbosity. As EVAL-WHEN with all situations specified is used an overwhelming majority of the time by most users, this shorthand can really come handy!"
 
   :depends-on ()
 
-  :version "1.0"
+  :version "2.0"
   :serial cl:t
   :components ((:file "package")
 	       (:file "main"))
