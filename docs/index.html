@@ -99,7 +99,7 @@
       <section id="introduction">
 
         <p>
-          <dfn><cite class="relevant">enhanced-eval-when</cite></dfn> provides an enhanced <code><a href="http://www.lispworks.com/documentation/HyperSpec/Body/s_eval_w.htm" target="_blank">eval-when</a></code> macro that supports
+          <dfn><cite class="relevant">enhanced-eval-when</cite></dfn> provides an enhanced <code><a href="https://www.lispworks.com/documentation/HyperSpec/Body/s_eval_w.htm" target="_blank">eval-when</a></code> macro that supports
           <br />
           <code class="common-lisp">(<code class="relevant"><a href="#dictionary_eval-when">eval-when</a></code> t ...)</code> as a shorthand for
           <br />
@@ -109,7 +109,7 @@
         </p>
 
         <p>
-          As <code><a href="http://www.lispworks.com/documentation/HyperSpec/Body/s_eval_w.htm" target="_blank">eval-when</a></code> with all situations specified is used an overwhelming majority
+          As <code><a href="https://www.lispworks.com/documentation/HyperSpec/Body/s_eval_w.htm" target="_blank">eval-when</a></code> with all situations specified is used an overwhelming majority
           <br />
           of the time by most users, this shorthand can really come handy!
         </p>
@@ -158,7 +158,7 @@
 
             <section class="description">
               <h1>Description</h1>
-              <p>Simply <code>(:shadowing-import-from #:enhanced-eval-when #:<code class="relevant"><a href="#dictionary_eval-when">eval-when</a></code>)</code> from your <a href="http://www.lispworks.com/documentation/HyperSpec/Body/m_defpkg.htm" target="_blank">defpackage</a>. Don't <code>(:use)</code>!</p>
+              <p>Simply <code>(:shadowing-import-from #:enhanced-eval-when #:<code class="relevant"><a href="#dictionary_eval-when">eval-when</a></code>)</code> from your <a href="https://www.lispworks.com/documentation/HyperSpec/Body/m_defpkg.htm" target="_blank">defpackage</a>. Don't <code>(:use)</code>!</p>
             </section>
 
           </article>
@@ -187,7 +187,7 @@
               <h1>Arguments and Values</h1>
               <ul>
                 <li><var>situations</var> -- A list of symbols, or the symbol <code>t</code>.</li>
-                <li><var>body</var> -- An <a href="http://www.lispworks.com/documentation/HyperSpec/Body/26_glo_i.htm#implicit_progn" target="_blank">implicit progn</a>.</li>
+                <li><var>body</var> -- An <a href="https://www.lispworks.com/documentation/HyperSpec/Body/26_glo_i.htm#implicit_progn" target="_blank">implicit progn</a>.</li>
                 <li><var>results</var> -- The values of <var>body</var> if it's executed or <code>nil</code> if not.</li>
 
               </ul>
@@ -196,7 +196,7 @@
             <section class="description">
               <h1>Description</h1>
               <p>
-                Directly expands to a standard <code><a href="http://www.lispworks.com/documentation/HyperSpec/Body/s_eval_w.htm" target="_blank">eval-when</a></code> with the same arguments,
+                Directly expands to a standard <code><a href="https://www.lispworks.com/documentation/HyperSpec/Body/s_eval_w.htm" target="_blank">eval-when</a></code> with the same arguments,
                 <br />
                 except if <var>situations</var> is <code>t</code>, then the equivalent parameter will be the list <code>(:compile-toplevel :load-toplevel :execute)</code>.
               </p>
